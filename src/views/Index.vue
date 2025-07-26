@@ -326,13 +326,14 @@ onUnmounted(() => {
 
 .click-effect {
   position: absolute;
-  width: 20px;
-  height: 20px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(0, 123, 255, 0.6) 50%, transparent 100%);
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.9) 0%, rgba(0, 123, 255, 0.8) 30%, rgba(255, 215, 0, 0.6) 70%, transparent 100%);
   border-radius: 50%;
   pointer-events: none;
   transform: translate(-50%, -50%);
-  animation: clickPulse 0.3s ease-out;
+  animation: clickPulse 0.4s ease-out;
+  box-shadow: 0 0 20px rgba(0, 123, 255, 0.5);
 }
 
 @keyframes clickPulse {
@@ -377,8 +378,8 @@ onUnmounted(() => {
   }
   
   .click-effect {
-    width: vw(20);
-    height: vw(20);
+    width: vw(40);
+    height: vw(40);
   }
   
   .btn-float {

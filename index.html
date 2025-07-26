@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1"/>
+    <title>새로워진 ZEM 혜택 모음</title>
+    <meta name="title" content="새로워진 ZEM 혜택 모음" />
+    <meta name="description" content="새로워진 ZEM 하나로 모두 다 안심 이게되네!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="새로워진 ZEM 혜택 모음" />
+    <meta property="og:description" content="새로워진 ZEM 하나로 모두 다 안심 이게되네!" />
+    <meta property="og:url" content="https://skt-zem.co.kr/" />
+    <meta property="og:image" content="https://skt-zem.co.kr/images/ogtag.png" />
+    <meta name="color-scheme" content="light only"/>
+    <meta name="supported-color-schemes" content="light"/>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+
+    <style>
+        :root {
+            --vh: 1vh;
+        }
+    </style>
+
+    <script src="https://api3.tnkfactory.com/tnk/js/tnk-webapi-cpatrack.1.4.js"></script>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script type="text/javascript">
+  ['DOMContentLoaded', 'resize'].forEach(event => {
+    window.addEventListener(event, _ => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    });
+  });
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1429143011349624');
+    fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1429143011349624&ev=PageView&noscript=1" /></noscript>
+<!-- End Meta Pixel Code -->
+
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+        integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx" crossorigin="anonymous"></script>
+<script>
+  window.Kakao.init('71102fa90f738e0c30d67ba9c26030d9'); // 사용하려는 앱의 JavaScript 키 입력
+</script>
+
+<script type="module" src="/src/main.ts"></script>
+</body>
+</html>

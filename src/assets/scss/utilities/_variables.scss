@@ -1,0 +1,93 @@
+@use "sass:map";
+@use '../tools/functions' as *;
+@forward '../tools/functions';
+
+// ----------------------------------------------------------------------
+// Font
+// ----------------------------------------------------------------------
+$font-family-root: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+$font-family-gmarket: "GmarketSans", -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Apple SD Gothic Neo", sans-serif;
+$font-size-root: 16px !default;
+$line-height-root: 1.5 !default;
+$scrollbar-width-px: 8px;
+$scrollbar-width: 8;
+
+// max-width
+$mobile-max-width: 840px;
+
+$font-weights: () !default;
+$font-weights: map-deep-merge(
+        (
+            'thin': 100,
+            'light': 300,
+            'regular': 400,
+            'medium': 600,
+            'bold': 700,
+            'black': 900
+        ),
+        $font-weights
+);
+
+$font-weight-regular: map.get($font-weights, 'regular') !default;
+$font-weight-medium: map.get($font-weights, 'medium') !default;
+$font-weight-light: map.get($font-weights, 'light') !default;
+$font-weight-bold: map.get($font-weights, 'bold') !default;
+
+$typography: () !default;
+$typography: map-deep-merge(
+        (
+            32: (
+                'size': 32px,
+                'line-height': 48px,
+            ),
+            28: (
+                'size': 28px,
+                'line-height': 40px,
+            ),
+            24: (
+                'size': 24px,
+                'line-height': 32px,
+            ),
+            21: (
+                'size': 21px,
+                'line-height': 32px,
+            ),
+            20: (
+                'size': 20px,
+                'line-height': 28px,
+            ),
+            18: (
+                'size': 18px,
+                'line-height': 28px,
+            ),
+            16: (
+                'size': 16px,
+                'line-height': 24px,
+            ),
+            15: (
+                'size': 15px,
+                'line-height': 24px,
+            ),
+            14: (
+                'size': 14px,
+                'line-height': 20px,
+            ),
+            13: (
+                'size': 13px,
+                'line-height': 20px,
+            ),
+            12: (
+                'size': 12px,
+                'line-height': 16px,
+            ),
+            11: (
+                'size': 11px,
+                'line-height': 16px,
+            ),
+            10: (
+                'size': 10px,
+                'line-height': 16px,
+            ),
+        ),
+        $typography
+);

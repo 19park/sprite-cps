@@ -162,8 +162,8 @@ export function imageTo64(
  * @param url
  */
 export function shareSnsLink(type: "fb" | "tw" | "kt", url: string) {
-    const SHARE_TITLE = "새로워진 ZEM 혜택 모음";
-    const SHARE_DESC = "새로워진 ZEM 하나로 모두 다 안심 이게되네!";
+    const SHARE_TITLE = "SPRITE CPS TEST";
+    const SHARE_DESC = "SPRITE CPS TEST DESCRIPTION";
     switch (type) {
         case "fb":
             window.open('http://www.facebook.com/sharer.php?u='+ url,

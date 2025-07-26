@@ -21,13 +21,13 @@ const eventComponent = computed(() => {
 </script>
 
 <template>
-  <div class="main">
+  <div class="main w-full max-w-mobile mx-auto">
     <Header />
     <component :is="eventComponent" />
     <EventShare />
   </div>
 
-  <a :href="getLinkPath(LinkType.INSTALL)" target="_blank" @click="trackClickAddEvent" class="btn-float">
+  <a :href="getLinkPath(LinkType.INSTALL)" target="_blank" @click="trackClickAddEvent" class="btn-float fixed bottom-6 right-6 z-20 flex flex-col items-end">
     <img src="/images/btn_float.png" alt="ZEM 설치하기" />
   </a>
 </template>

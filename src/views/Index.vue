@@ -33,7 +33,7 @@ const loadSpriteImage = () => {
     const img = new Image();
     img.onload = () => resolve(img);
     img.onerror = reject;
-    img.src = '/images/sprite.png';
+    img.src = import.meta.env.BASE_URL + 'images/sprite.png';
   });
 };
 

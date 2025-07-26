@@ -10,9 +10,9 @@
         </slot>
       </div>
     </transition>
-    <div @click="toggleMenu" class="fab-trigger-wrapper" :class="{ 'active': isOpen }">
+    <div @click="toggleMenu" class="fab-trigger-wrapper font-light" :class="{ 'active': isOpen }">
       <!-- 기본 트리거 -->
-      <a href="javascript:void(0)" class="fab-trigger">
+      <a href="javascript:void(0)" class="fab-trigger font-bold">
         <span v-html="toggleText"></span>
       </a>
     </div>
@@ -59,7 +59,6 @@ const toggleMenu = () => {
     cursor: pointer;
     color: white;
     font-size: 27px;
-    font-weight: $font-weight-bold;
     /*background-color: #5872FF;*/
     width: 165px;
     height: 165px;
@@ -72,7 +71,6 @@ const toggleMenu = () => {
   &.active {
     .fab-trigger {
       font-size: 80px;
-      font-weight: $font-weight-light;
     }
   }
 }

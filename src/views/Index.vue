@@ -28,45 +28,28 @@ const eventComponent = computed(() => {
   </div>
 
   <a :href="getLinkPath(LinkType.INSTALL)" target="_blank" @click="trackClickAddEvent" class="btn-float fixed bottom-6 right-6 z-20 flex flex-col items-end">
-    <img src="/images/btn_float.png" alt="ZEM 설치하기" />
+    <img src="/images/btn_float.png" alt="ZEM 설치하기" class="w-52 h-52" />
   </a>
 </template>
 
 <style lang="scss" scoped>
-.main {
-  width: 100%;
-  max-width: $mobile-max-width;
-}
-a.btn-float {
-  position: fixed;
-  bottom: 25px;
-  right: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  z-index: 20;
-
-  img {
-    width: 207px;
-    height: 207px;
-  }
-}
+// 모바일 반응형 스타일 (vw 함수 사용)
 @media only screen and (max-width: $mobile-max-width) {
-  a.btn-float {
-    bottom: vw(25);
-    right: vw(25);
+  .btn-float {
+    bottom: vw(25) !important;
+    right: vw(25) !important;
 
     img {
-      width: vw(207);
-      height: vw(207);
+      width: vw(207) !important;
+      height: vw(207) !important;
     }
   }
 }
 
+// 다크모드 대응
 @media (prefers-color-scheme: dark) {
   .main {
     background: #fff !important;
-    background-color: #fff !important;
   }
 }
 </style>

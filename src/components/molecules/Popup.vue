@@ -30,7 +30,7 @@ watch(() => props.modelValue, value => {
       <div class="modal-wrapper">
         <div class="modal-container">
 
-          <div class="modal-header">
+          <div class="modal-header font-bold">
             <slot name="header">
               default header
             </slot>
@@ -88,7 +88,6 @@ watch(() => props.modelValue, value => {
 .modal-header {
   padding: 18px 24px;
   font-size: 20px;
-  font-weight: $font-weight-bold;
   text-align: center;
 }
 

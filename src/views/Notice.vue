@@ -41,10 +41,10 @@ function handleAccordion(selectedIndex:number) {
           <img v-if="questions[0].isExpanded" src="/images/icons/icon_arrow.on.png" alt=""/>
           <img v-else src="/images/icons/icon_arrow.png" alt=""/>
         </span>
-        <h3>이벤트 유의 사항</h3>
+        <h3 class="font-bold">이벤트 유의 사항</h3>
       </a>
       <Collapse :when="questions[0].isExpanded">
-        <div class="notice__body">
+        <div class="notice__body font-semibold">
           <p>• 이 이벤트 경품은 2024년 7월 10일(수)부터 7월 18일(목)까지 SK텔레콤 갤럭시 폴더블6 혜택 알림 수신에 동의한 만 14세 이상 고객님만 받으실 수 있습니다. (법인 및 외국인 고객님은 이벤트에 참여하실 수 없습니다.)​</p>
           <p>• 100% 당첨 스마일캐시 1,500원은 이벤트 참여 시 광고 및 마케팅 수신에 동의 후 입력한 휴대폰 번호로 10분 안에 보내 드립니다.</p>
           <p>• 당첨된 랜덤 스마일캐시는 이벤트 기간 안에 SK텔레콤 공식 인증 대리점 또는 T 다이렉트샵에서 갤럭시 폴더블6 사전예약을 완료하신 고객님께 2024년 7월 26일(금) 장문문자(LMS)로 보내 드립니다.</p>
@@ -70,11 +70,11 @@ function handleAccordion(selectedIndex:number) {
           <img v-if="questions[1].isExpanded" src="/images/icons/icon_arrow.on.png" alt=""/>
           <img v-else src="/images/icons/icon_arrow.png" alt=""/>
         </span>
-        <h3>경품 관련 유의 사항</h3>
+        <h3 class="font-bold">경품 관련 유의 사항</h3>
       </a>
       <Collapse :when="questions[1].isExpanded">
-        <div class="notice__body">
-          <h4>[공통]</h4>
+        <div class="notice__body font-semibold">
+          <h4 class="font-semibold">[공통]</h4>
           <p>• 이 이벤트 혜택은 "100% 당첨 스마일캐시 1,500원"과 "랜덤 스마일캐시"로 나뉩니다.</p>
           <p>• 100% 당첨 스마일캐시 1,500원 (선착순 6만 명)</p>
           <p>• 랜덤 스마일캐시 최대 10만 원 (선착순 6만 명)</p>
@@ -133,10 +133,10 @@ function handleAccordion(selectedIndex:number) {
           <img v-if="questions[2].isExpanded" src="/images/icons/icon_arrow.on.png" alt=""/>
           <img v-else src="/images/icons/icon_arrow.png" alt=""/>
         </span>
-        <h3>문의: 이벤트 운영사무국</h3>
+        <h3 class="font-bold">문의: 이벤트 운영사무국</h3>
       </a>
       <Collapse :when="questions[2].isExpanded">
-        <div class="notice__body">
+        <div class="notice__body font-semibold">
           <p>• 이 이벤트와 관련된 문의사항은 아래 이벤트 운영 고객센터로 문의 바랍니다.</p>
           <p class="no-mark link">- 이메일: <a href="mailto:skt.foldable6@gmail.com">skt.foldable6@gmail.com</a></p>
           <p class="no-mark link">- 카카오채널: SKT 폴더블6 육대급 프로모션 (<a href="http://pf.kakao.com/_xgTxlpG/chat" target="_blank">http://pf.kakao.com/_xgTxlpG/chat</a>)</p>
@@ -176,7 +176,6 @@ function handleAccordion(selectedIndex:number) {
       }
       h3 {
         font-size: 32px;
-        font-weight: $font-weight-bold;
       }
 
       &.notice__header-btn {
@@ -187,12 +186,10 @@ function handleAccordion(selectedIndex:number) {
       background-color: #EEEEEE;
       color: #191919;
       padding: 47px;
-      font-weight: $font-weight-medium;
 
       h3, h4 {
         font-size: 30px;
         margin-bottom: 20px;
-        font-weight: $font-weight-medium;
       }
       p {
         font-size: 26px;

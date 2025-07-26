@@ -1,4 +1,4 @@
-// screen reader
+// 접근성을 위한 screen reader 전용 클래스 (Tailwind에 없으므로 유지)
 .blind {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -9,13 +9,7 @@
   white-space: pre-wrap;
 }
 
-.relative {
-  position: relative;
-}
-.absolute {
-  position: absolute;
-}
-
+// 프로젝트 특화 로더 (Tailwind 대신 유지)
 .loader {
   color: #FFC7C9;
   font-size: 10px;
@@ -28,19 +22,12 @@
   transform: translateZ(0);
 }
 
+// 프로젝트 특화 disabled 스타일 (커스텀 이미지 투명도 포함)
 .disabled {
   cursor: default;
   img {
     opacity: 0.5;
   }
-}
-
-.rdg-image {
-  //-ms-transform: translateZ(0); // ie
-  //-moz-transform: translateZ(0); // firefox
-  //-o-transform: translateZ(0); // opera
-  //-webkit-transform: translateZ(0);
-  //transform: translateZ(0);
 }
 
 @keyframes mulShdSpin {

@@ -1,29 +1,29 @@
-@use "sass:meta";
 @use "../utilities/variables" as *;
 
+// Tailwind preflight가 비활성화되어 있으므로 필요한 reset만 적용
 :root {
   font-size: $font-size-root;
-  //line-height: $line-height-root;
-  font-weight: $font-weight-regular;
+  font-family: $font-family-root;
 
+  // 폰트 렌더링 최적화
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  // 프로젝트 컬러 변수
   --color-base: #191919;
   color-scheme: light only;
 }
 
+// 기본 박스 모델 및 한국어 텍스트 설정
 * {
-  //letter-spacing: -0.04em;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   word-break: keep-all;
   word-wrap: break-word;
-  box-sizing: border-box;
-  font-family: $font-family-root;
 }
 
 /*[s] Reset Css */

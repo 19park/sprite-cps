@@ -38,20 +38,20 @@ function onClose(update: boolean) {
     <template #header>개인정보 처리의 위탁 동의(필수)</template>
     <template #body>
       <p>
-        <strong>"갤럭시 폴더블6 혜택 알림 프로모션"</strong>와 관련하여, 본인의 개인정보처리 업무를 위탁합니다.
+        <strong class="font-semibold">"갤럭시 폴더블6 혜택 알림 프로모션"</strong>와 관련하여, 본인의 개인정보처리 업무를 위탁합니다.
       </p>
       <br/>
 
       <table>
         <tbody>
         <tr>
-          <th>수탁사</th>
+          <th class="font-semibold">수탁사</th>
           <td>
             본애드컴㈜(운영대행사)
           </td>
         </tr>
         <tr>
-          <th>업무 내용</th>
+          <th class="font-semibold">업무 내용</th>
           <td>
             이벤트 운영, 경품 당첨자 확인 및 배송, 고객 상담 업무
           </td>
@@ -77,7 +77,6 @@ table {
     padding: 8px;
     width: 80px;
     background-color: #cccccc;
-    font-weight: $font-weight-medium;
     border: 1px solid #333333;
   }
   td {
@@ -86,7 +85,6 @@ table {
     &.important {
       color: blue;
       font-size: 1.2em;
-      font-weight: $font-weight-medium;
       text-decoration: underline;
     }
   }

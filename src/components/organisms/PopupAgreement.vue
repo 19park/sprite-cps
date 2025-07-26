@@ -92,7 +92,6 @@ table {
     padding: 8px;
     width: 84px;
     background-color: #cccccc;
-    font-weight: $font-weight-medium;
     border: 1px solid #333333;
   }
   td {
@@ -101,8 +100,7 @@ table {
     &.important {
       color: blue;
       font-size: 1.2em;
-      font-weight: $font-weight-medium;
-      text-decoration: underline;
+        text-decoration: underline;
     }
   }
 }

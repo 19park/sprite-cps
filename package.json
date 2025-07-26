@@ -1,5 +1,5 @@
 {
-  "name": "skt-foldable-join",
+  "name": "skt-cps-test",
   "private": true,
   "version": "1.0.0",
   "type": "module",

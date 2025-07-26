@@ -111,7 +111,7 @@ function onCopySuccess() {
       </div>
     </div>
   </section>
-  <div class="float-padding"></div>
+  <!-- <div class="float-padding"></div> -->
 </template>
 
 <style lang="scss" scoped>

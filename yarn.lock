@@ -2222,9 +2222,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"skt-foldable-join@workspace:.":
+"skt-cps-test@workspace:.":
   version: 0.0.0-use.local
-  resolution: "skt-foldable-join@workspace:."
+  resolution: "skt-cps-test@workspace:."
   dependencies:
     "@gtm-support/vue-gtm": "npm:^2.0.0"
     "@soerenmartius/vue3-clipboard": "npm:^0.1.2"
